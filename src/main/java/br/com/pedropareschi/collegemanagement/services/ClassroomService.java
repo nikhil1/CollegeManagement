@@ -6,6 +6,7 @@ import br.com.pedropareschi.collegemanagement.domain.Classroom;
 import br.com.pedropareschi.collegemanagement.dto.ClassroomDTO;
 import br.com.pedropareschi.collegemanagement.repositories.ClassroomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import java.time.DayOfWeek;
@@ -17,6 +18,7 @@ public class ClassroomService {
     @Autowired
     private ClassroomRepository repository;
 
+    @Lazy
     @Autowired
     private ClassService classService;
 
